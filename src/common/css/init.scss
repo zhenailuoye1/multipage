@@ -21,6 +21,17 @@
             height: $font-size * 3;
         }
     }
+    @if $style == width {
+        width: $font-size;
+
+        [data-dpr="2"] & {
+            width: $font-size * 2;
+        }
+
+        [data-dpr="3"] & {
+            width: $font-size * 3;
+        }
+    }
     @if $style == line-height {
         line-height: $font-size;
 
@@ -85,6 +96,50 @@
 
         [data-dpr="3"] & {
             padding-left: $font-size * 3;
+        }
+    }
+    @if $style == margin-top {
+        margin-top: $font-size;
+
+        [data-dpr="2"] & {
+            margin-top: $font-size * 2;
+        }
+
+        [data-dpr="3"] & {
+            margin-top: $font-size * 3;
+        }
+    }
+    @if $style == margin-right {
+        margin-right: $font-size;
+
+        [data-dpr="2"] & {
+            margin-right: $font-size * 2;
+        }
+
+        [data-dpr="3"] & {
+            margin-right: $font-size * 3;
+        }
+    }
+    @if $style == margin-bottom {
+        margin-bottom: $font-size;
+
+        [data-dpr="2"] & {
+            margin-bottom: $font-size * 2;
+        }
+
+        [data-dpr="3"] & {
+            margin-bottom: $font-size * 3;
+        }
+    }
+    @if $style == margin-left {
+        margin-left: $font-size;
+
+        [data-dpr="2"] & {
+            margin-left: $font-size * 2;
+        }
+
+        [data-dpr="3"] & {
+            margin-left: $font-size * 3;
         }
     }
 }

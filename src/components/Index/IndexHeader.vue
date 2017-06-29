@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header id="header" v-on:touchmove.prevent>
         <div id="header-wrap">
             <div id="search">
                 <span>寻找宝贝店铺</span>
@@ -10,7 +10,7 @@
 
 <script>
     export default {
-        name: 'appHeader'
+        name: 'indexHeader'
     }
 </script>
 
@@ -18,7 +18,10 @@
     @import "../../common/css/init.scss";
     @import "../../common/css/font-face.css";
 
-    header {}
+    #header {
+        position: relative;
+        z-index: 9999;
+    }
 
     #header-wrap {
         box-sizing: border-box;
